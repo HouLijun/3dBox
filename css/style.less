@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+::selection{
+    background-color: #333;
+    color: #fff;
+}
+.wrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width: 300px;
+    height: 300px;
+    user-select: none;
+    
+    perspective: none;
+    perspective-origin: 50%;
+    transform-style: preserve-3d;
+//  transform: rotateX(20deg) rotateY(0deg);
+}
+.face{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0,0,0,0.8);
+    border:2px solid #fff;
+    line-height: 300px;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    color: #fff;
+}
+.face_01{
+    transform: rotateX(90deg) translateZ(150px);
+}
+.face_02{
+    transform: rotateX(270deg) translateZ(150px);
+}
+.face_03{
+    transform: rotateY(270deg) translateZ(150px);
+}
+.face_04{
+    transform: rotateY(90deg) translateZ(150px);
+}
+.face_05{
+    transform: translateZ(150px);
+}
+.face_06{
+    transform: rotateY(180deg) translateZ(150px);
+}
